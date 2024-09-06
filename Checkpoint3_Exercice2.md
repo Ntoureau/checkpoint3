@@ -19,7 +19,7 @@ nano /etc/ssh/sshd_config
 ```
 
 Pour désactiver l'accès à distance par l'utilisateur root, on modifie la ligne suivante :
-[17.rootloginssh.png]()
+![17.rootloginssh.png](https://github.com/Ntoureau/checkpoint3/blob/main/17.rootloginssh.png?raw=true)
 
 **Q.2.2.2**
 Pour autoriser l'accès à distance au compte personnel créé précédemment, on ajoute la ligne :
@@ -60,12 +60,12 @@ df -h
 ```
 On obtient :
 
-[18.systfichiers.png]()
+![18.systfichiers.png](https://github.com/Ntoureau/checkpoint3/blob/main/18.systfichiers.png?raw=true)
 
 **Q2.3.2**
 Pour obtenir les systèmes de stockage, on utilise la même commande que précédemment avec l'argument -T.
 
-[19.syststockage.png]
+![19.syststockage.png](https://github.com/Ntoureau/checkpoint3/blob/main/19syststockage.png?raw=true)
 
 **Q2.3.3**
 Pour ajouter le nouveau disque au serveur, on ouvre VirtualBox, on sélectionne notre serveur, ```Configuration``` > ```Stockage```> ```Ajouter un périphérique```> ```Ajouter un VMDK```et on lui alloue les 8G de mémoire.
@@ -108,7 +108,7 @@ nano /etc/fstab
 UUID=2d82b600-1a4f-4f2a-95ee-a0b83807f2a3 /var/lib/bareos/storage ext4 defaults 0 2
 ```
 
-[20.fstab.png]()
+![20.fstab.png](https://github.com/Ntoureau/checkpoint3/blob/main/20.fstab.png?raw=true)
 
 **Q.2.3.5**
 ```
@@ -118,7 +118,7 @@ vgs
 vgdisplay -s
 ```
 
-[21.volumerestant.png]
+![21.volumerestant.png](https://github.com/Ntoureau/checkpoint3/blob/main/21.volumerestant.png?raw=true)
 
 il reste donc <1,79 GiB de disponibles.
 
@@ -142,7 +142,7 @@ nft list tables
 nft list ruleset
 ```
 
-[22.ruleslist.png]()
+![22.ruleslist.png](https://github.com/Ntoureau/checkpoint3/blob/main/22.ruleslist.png?raw=true)
 
 **Q.2.5.2**
 ```ct state established,related accept```: autorise les communications déjà établies via une connexion existante
