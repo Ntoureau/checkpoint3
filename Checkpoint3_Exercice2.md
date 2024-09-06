@@ -164,3 +164,10 @@ nft list ruleset > /etc/nftables.conf
 
 ## **Partie 6 : Analyse de logs
 **Q.2.6.1**
+```
+# on utilise la commande suivante pour afficher les 10 dernières connexion (tip : c'est sshd et pas ssh qu'il faut utiliser...)
+journalctl -t sshd | grep -i "failed" | tail -n 10
+```
+
+On obtient
+![23.echeclist.png](https://github.com/Ntoureau/checkpoint3/blob/main/23.echeclist.png?raw=true)
